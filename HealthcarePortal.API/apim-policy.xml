@@ -1,0 +1,7 @@
+﻿<policies>
+  <inbound>
+    <base />
+    <validate-jwt header-name="Authorization" failed-validation-httpcode="401" />
+    <rate-limit calls="100" renewal-period="60" />
+  </inbound>
+</policies>
