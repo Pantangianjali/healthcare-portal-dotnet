@@ -1,2 +1,12 @@
-# healthcare-portal-dotnet
-Full-stack .NET 6 + Angular 15 app for healthcare financial workflows. Azure Functions, Key Vault, APIM, Repository Pattern, DI, CI/CD. Built for Zelis .NET stack.
+# Healthcare Claims Portal - Zelis Tech Stack
+
+.NET 10 Web API for healthcare financial data processing.
+
+**Zelis-Stack Implementation:**
+- **Azure Functions** → `ProcessClaimFunction.cs` - Serverless claim processing
+- **APIM** → `apim-policy.xml` - JWT auth + rate limiting at gateway 
+- **Key Vault** → `KeyVaultService.cs` - Managed Identity for secrets
+- **Repository Pattern** → `ClaimsRepository.cs` - Clean data access layer
+- **Dependency Injection** → `Program.DI.cs` - Decoupled architecture
+
+Built to mirror Zelis's healthcare payments platform architecture.
